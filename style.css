@@ -1,5 +1,6 @@
 body {
-    background-color: hsl(185, 75%, 39%);
+    background: url(./images/bg-pattern-top.svg) hsl(185, 75%, 39%)repeat-x;
+    background-position: left;
 }
 .main {
     display: flex;
@@ -38,6 +39,19 @@ body {
    height: 30%;
    display: flex;
    justify-content: center;
+   flex-direction: column;
+   text-align: center;
+}
+.card__title--name {
+    position: relative;
+    font-weight: bold;
+    font-size: 1.2rem;
+    bottom:65px;
+}
+.card__title--emphasis {
+    font-size: 1rem;
+    color: lightgray
+
 }
 .card__footer {
     height: 30%;
@@ -45,10 +59,20 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 0.8rem;
 
 }
 .card__tag {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
+    
+}
+.card__tag--number {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.card__tag--items {
+    font-size: 1rem;
+    color: lightgray;
 }
